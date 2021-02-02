@@ -1,0 +1,14 @@
+name: 'Run Action'
+description: 'Just run a thing with some dummy args'
+author: 'pjones'
+inputs:
+  arch:
+    description: 'dummy'
+    default: 'x64'
+  distro:
+    description: 'dummy'
+    default: 'x64'
+runs:
+  args:
+    - ${{ inputs.arch }}
+    - ${{ inputs.distro }}
